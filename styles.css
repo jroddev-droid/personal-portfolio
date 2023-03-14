@@ -37,59 +37,36 @@ nav ul li {
 /* Styling for main index page */
 
 .main_content {
+  border: 1px solid blue;
   margin-top: 50px;
-  height: 70%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /*background: linear-gradient(-45deg, #16161a, #090a0b, #010101, #0000);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	        animation: gradient 15s ease infinite;*/
-  
-}
-
-@-webkit-keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.main_content .brief_introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-  text-align: center;
-  font-size: 22pt;
-}
-
-.main_content .profile_picture {
-  width: 50%;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+}
+
+
+.brief_introduction {
+  border: 1px solid yellow; 
+  width: 50%; 
+  text-align: center;  
+  font-size: 22pt;  
+}
+
+.profile_picture {
+  border: 1px solid red; 
+  width: 50%;
 }
 
 img {
-  border-radius: 25%;
+  border-radius: 50%;
 }
+
+
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  .brief_introduction, .profile_picture {
+    width: 100%;
+  }
+}
+
