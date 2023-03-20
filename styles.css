@@ -73,7 +73,7 @@ body {
   padding-left: 8rem;
 }
 
-img {
+#profile_pic {
   border-radius: 50%;
 }
 
@@ -129,10 +129,16 @@ img {
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: stretch;
   gap: 1rem;
+  margin-top: 4rem;
 }
 
 .project {
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Media queries for different screen sizes */
