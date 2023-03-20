@@ -141,6 +141,19 @@ body {
   gap: 1rem;
 }
 
+i {
+  font-size: 3rem;
+}
+i:hover {
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon_links {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Media queries for different screen sizes */
 @media screen and (max-width: 768px) {
   .brief_introduction, .profile_picture {
