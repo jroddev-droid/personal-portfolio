@@ -10,16 +10,13 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
-
-/* Styling for navigation bar */
+/* Navigation Bar styling */
 
 nav {
-  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav-list {
@@ -55,6 +52,17 @@ nav {
 .nav-list li a:hover::before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.landing-page {
+  padding-top: 10em;
+  padding-left: 5rem;
+  font-size: 1.75rem;
 }
 
 .hidden {
@@ -104,4 +112,7 @@ i:hover {
     width: 100%;
   }
 }
+
+
+
 
