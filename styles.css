@@ -7,9 +7,22 @@ body {
   background-color: #121212;
   color: #f2f2f2;
   font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-snap-type: y mandatory;
 }
 
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+
 /* Styling for navigation bar */
+
+nav {
+  display: none;
+  
+}
+
 .nav-list {
   list-style: none;
   margin: 0;
@@ -45,74 +58,6 @@ body {
   transform: scaleX(1);
 }
 
-
-/* Styling for main index page */
-
-.main_content {
-  background-color: #121212;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-top: 5rem;
-
-}
-
-
-.brief_introduction {
-  width: 50%; 
-  text-align: center;  
-  font-size: 1rem;
-  padding-top: 9rem;  
-}
-
-.profile_picture {
-  width: 50%;
-  padding-left: 8rem;
-}
-
-#profile_pic {
-  border-radius: 50%;
-}
-
-/* Button Styling for "View Projects button " */
-
-.projects_button {
-  color: #f2f2f2;
-  cursor: pointer;
-  position: relative;
-  padding: 10px 20px;
-  background: #121212;
-  font-size: 28px;
-  transition: all 0.2s;
-}
-.projects_button:after, .projects_button:before {
-  content: " ";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 0px solid #121212;
-  transition: all 1s;
-}
-.projects_button:after {
-  top: -1px;
-  left: -1px;
-  border-top: 5px solid #f2f2f2;
-  border-left: 5px solid #f2f2f2;
-}
-.projects_button:before {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 5px solid #f2f2f2;
-  border-right: 5px solid #f2f2f2;
-}
-.projects_button:hover {
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.projects_button:hover:before, .projects_button:hover:after {
-  width: 100%;
-  height: 100%;
-}
 
 
 /* Styling for Projects Page */
