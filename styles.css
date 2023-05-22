@@ -20,7 +20,6 @@ section {
 
 nav {
   display: none;
-  
 }
 
 .nav-list {
@@ -58,7 +57,14 @@ nav {
   transform: scaleX(1);
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
 
+.show {
+  opacity: 1;
+}
 
 /* Styling for Projects Page */
 
