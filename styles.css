@@ -75,8 +75,6 @@ section {
   text-align: center;
 }
 
-
-
 .hidden {
   opacity: 0;
   transition: all 3s;
@@ -84,6 +82,25 @@ section {
 
 .show {
   opacity: 1;
+}
+
+/* Styling for project cards */
+
+.projects-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px red solid;
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #242629;
 }
 
 /* Styling for secondary Projects Page */
