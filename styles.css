@@ -4,10 +4,21 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
   color: #f2f2f2;
   font-family: "Plus Jakarta Sans", sans-serif;
   scroll-snap-type: y mandatory;
+}
+
+/* Styles video background for portfolio */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.3);
 }
 
 /* Navigation Bar styling */
@@ -75,6 +86,7 @@ section {
   text-align: center;
 }
 
+/* Animation for pages */
 .hidden {
   opacity: 0;
   transition: all 3s;
@@ -100,10 +112,10 @@ section {
   align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  background-color: #242629;
+  border: 1px solid green;
 }
 
-/* Styling for secondary Projects Page */
+/* Styling for icons on Projects Page */
 i {
   font-size: 3rem;
 }
@@ -117,12 +129,6 @@ i:hover {
   color: inherit;
 }
 
-/* Media queries for different screen sizes */
-@media screen and (max-width: 768px) {
-  .brief_introduction, .profile_picture {
-    width: 100%;
-  }
-}
 
 
 
