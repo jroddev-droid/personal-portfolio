@@ -78,7 +78,8 @@ section {
 
 .page-header {
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .page-description {
@@ -102,7 +103,6 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px red solid;
   gap: 1rem;
 }
 
@@ -112,7 +112,24 @@ section {
   align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  border: 1px solid green;
+}
+
+
+/* Styling for About Page */
+
+.about-section {
+  display: flex;
+  gap: 5rem;
+  margin: 2rem;
+}
+
+.about-section h2 {
+  margin-block: 1rem;
+}
+
+.about-me {
+  width: 50%;
+  line-height: 1.7;
 }
 
 /* Styling for icons on Projects Page */
