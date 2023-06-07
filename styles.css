@@ -114,6 +114,9 @@ section {
   border-radius: 10px;
 }
 
+.view-github-profile-sec {
+  text-align: center;
+}
 
 /* Styling for About Page */
 
@@ -131,6 +134,27 @@ section {
   width: 50%;
   line-height: 1.7;
 }
+
+/* Styling for grid section on About Me page */
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  grid-gap: 7rem;
+  text-align: center;
+  margin-left: 10rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
 
 /* Styling for icons on Projects Page */
 i {
