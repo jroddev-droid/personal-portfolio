@@ -18,7 +18,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.3);
+  filter: brightness(0.1);
 }
 
 /* Navigation Bar styling */
@@ -87,7 +87,7 @@ section {
   text-align: center;
 }
 
-/* Animation for pages */
+/* Animation for text on pages */
 .hidden {
   opacity: 0;
   transition: all 3s;
@@ -97,26 +97,55 @@ section {
   opacity: 1;
 }
 
-/* Styling for project cards */
+/* Styling for projects slider */
+.slider {
+  width: 100%;
+  /* max-width: 800px; */
 
-.projects-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  height: 350px;
+  position: relative;
+  overflow: hidden; 
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 10px;
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
 }
 
-.view-github-profile-sec {
-  text-align: center;
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
 
 /* Styling for About Page */
 
