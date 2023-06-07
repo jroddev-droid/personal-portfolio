@@ -142,7 +142,7 @@ section {
   align-content: center;
   grid-gap: 7rem;
   text-align: center;
-  margin-left: 10rem;
+  margin-left: 17rem;
 }
 
 .skill-item {
@@ -170,6 +170,45 @@ i:hover {
   color: inherit;
 }
 
+/* Styling for Form on Contact Page */
+form {
+  /* background-color: #fffffe; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color:#94a1b2;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Button styles */
+button[type="submit"] {
+  background-color: #7f5af0; 
+  border: none;
+  border-radius: 5px;
+  color: #fffffe;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #16161a;
+}
 
 
 
