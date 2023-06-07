@@ -54,7 +54,7 @@ nav {
   width: 100%;
   height: 1px;
   bottom: 0;
-  background-color: #f2f2f2;
+  background-color: #7f5af0;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.2s ease-in-out 0s;
@@ -82,11 +82,11 @@ section {
   margin-bottom: 3rem;
 }
 
+
 .page-description {
   margin-top: 2rem;
   text-align: center;
 }
-
 /* Animation for text on pages */
 .hidden {
   opacity: 0;
@@ -97,14 +97,17 @@ section {
   opacity: 1;
 }
 
+.center-wrapper {
+  margin-bottom: 1rem;
+  text-align: center;
+}
 /* Styling for projects slider */
 .slider {
-  width: 100%;
-  /* max-width: 800px; */
-
+  width: 80%;
   height: 350px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
+  margin: auto; 
 }
 
 .slide {
@@ -125,12 +128,10 @@ section {
   position: absolute;
   width: 40px;
   height: 40px;
-  padding: 10px;
   border: none;
-  border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #f2f2f2;
   font-size: 18px;
 }
 .btn:active {
@@ -146,62 +147,28 @@ section {
   right: 2%;
 }
 
-
-/* Styling for About Page */
-
-.about-section {
-  display: flex;
-  gap: 5rem;
-  margin: 2rem;
+i {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
-.about-section h2 {
-  margin-block: 1rem;
-}
-
-.about-me {
-  width: 50%;
-  line-height: 1.7;
-}
-
-/* Styling for grid section on About Me page */
 .skill-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  grid-gap: 7rem;
-  text-align: center;
-  margin-left: 17rem;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
-.caption {
-  margin-top: 10px;
-}
-
-
-/* Styling for icons on Projects Page */
-i {
-  font-size: 3rem;
-}
-i:hover {
-  opacity: 0.5;
-  transition: all 0.3s ease-in-out;
-}
-
-.icon_links {
-  text-decoration: none;
-  color: inherit;
-}
 
 /* Styling for Form on Contact Page */
 form {
-  /* background-color: #fffffe; */
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   max-width: 500px;
