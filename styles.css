@@ -169,8 +169,18 @@ i {
 
 /* Styling for about page */
 
+.about-container {
+  margin-top: 8rem;
+}
+
 .about-headers {
+  font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skill-grid {
+  margin-bottom: 3rem;
 }
 
 /* Styling for Form on Contact Page */

@@ -64,8 +64,8 @@
 
 
     <section id="about" class="hidden">
-      
       <h2 class="page-header">About</h2>
+      <div class="about-container">
           <h2 class="about-headers">What I Do</h2>
           <div class="skill-grid">
             <div class="skill-item">
@@ -89,7 +89,7 @@
           <p class="page-description">As technology advances, I believe in staying updated with the latest trends and best practices in the front-end development field. I am always eager to expand my skillset by exploring new frameworks, libraries, and tools that can streamline the development process and bring innovative features to my projects.</p>
           <h2 class="about-headers">User-Focused Approach</h2>
           <p class="page-description">User experience is at the heart of my work. I strive to create websites that are intuitive, user-friendly, and accessible to a wide range of audiences. I pay attention to details, ensuring seamless navigation, fast-loading pages, and optimized performance for a delightful user experience.</p>
-
+      </div>    
     </section>
 
 
@@ -109,7 +109,7 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
           
-          <button type="submit">Send Message</button>
+          <button type="submit" onclick="sendEmail()">Send Message</button>
           
           <p class="success" style="display: none;">Thanks for your message!</p>
           <p class="error" style="display: none;">Please fill out all fields.</p>
