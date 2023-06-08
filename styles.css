@@ -85,6 +85,7 @@ section {
 
 .page-description {
   margin-top: 2rem;
+  margin-inline: 30rem;
   text-align: center;
 }
 /* Animation for text on pages */
@@ -166,6 +167,11 @@ i {
   gap: 1rem;
 }
 
+/* Styling for about page */
+
+.about-headers {
+  text-align: center;
+}
 
 /* Styling for Form on Contact Page */
 form {
