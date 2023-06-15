@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Welcome to my personal portfolio repository! This is a showcase of my journey as a front-end web developer and my growing skills in HTML, CSS, and JavaScript. I have created this portfolio to display some of the projects I have worked on and to demonstrate my ability to create visually appealing and interactive web experiences.
+Welcome to my personal portfolio repository! This is a showcase of my journey as a front-end web developer and my growing skills in HTML, CSS, and JavaScript. I have created this portfolio to display some of the projects I have worked on and to demonstrate my ability to create visually appealing and interactive web experiences. It is still undergoing some work as page still needs to be made responsive for different screen sizes.
 
 ## Technologies Used
 
