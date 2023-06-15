@@ -28,10 +28,12 @@ Please visit [my portfolio website](link-to-portfolio) to explore more of my pro
 
 ## Getting Started
 
+To view portfolio in a browser click the link
+
 To view the portfolio and the projects locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/your-portfolio.git`
-2. Navigate to the project directory: `cd your-portfolio`
+1. Clone this repository: `git clone https://github.com/jroddev-droid/personal-portfolio.git`
+2. Navigate to the project directory: `cd personal-portfolio`
 3. Open the `index.html` file in your preferred web browser.
 
 ## Contact
