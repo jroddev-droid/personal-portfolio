@@ -61,3 +61,10 @@ prevSlide.addEventListener("click", function () {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
 });
+
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('nav ul.nav-list');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });

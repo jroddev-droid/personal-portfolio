@@ -23,6 +23,17 @@ body {
 
 /* Navigation Bar styling */
 
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+nav ul.nav-list li:last-child {
+  margin-right: 0;
+}
+
+
 nav {
   position: fixed;
   top: 0;
@@ -158,6 +169,7 @@ i {
   display: flex;
   justify-content: center;
   gap: 7rem;
+  margin-bottom: 3rem;
 }
 
 .skill-item {
@@ -179,9 +191,6 @@ i {
   margin-bottom: 3rem;
 }
 
-.skill-grid {
-  margin-bottom: 3rem;
-}
 
 /* Styling for Form on Contact Page */
 form {
@@ -223,5 +232,59 @@ button[type="submit"]:hover {
 }
 
 
+@media screen and (max-width: 500px) {
+/* nav ul.nav-list {
+ display: none;
+}
 
+.hamburger {
+  display: block;
+} */
+
+.landing-page {
+  text-align: center;
+  font-size: 11pt;
+  padding-left: 0rem;
+  padding-top: 15rem;
+}
+
+.page-description {
+  text-align: center;
+  margin-top: 1rem;
+  margin-inline: 4px;
+  font-size: 11pt;
+}
+
+
+.page-header {
+  text-align: center;
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-container {
+  margin-top: 3rem;
+}
+
+.about-headers {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.skill-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+}
 
