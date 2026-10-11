@@ -178,13 +178,6 @@ nav{
   background:radial-gradient(ellipse 60% 50% at 30% 50%,rgba(200,200,215,.025) 0%,transparent 70%);
   pointer-events:none;z-index:0;
 }
-.hero-bg{
-  position:absolute;right:2rem;top:50%;
-  transform:translateY(-50%);
-  font-family:serif;font-size:clamp(10rem,30vw,26rem);line-height:1;
-  color:transparent;-webkit-text-stroke:1px rgba(220,220,235,0.06);
-  pointer-events:none;user-select:none;z-index:0;
-}
 .hero-content{position:relative;z-index:3;max-width:900px;width:100%}
 
 .hero-err{
@@ -599,14 +592,22 @@ footer p{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.15em;colo
 .lb-ph p{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em}
 
 /* ════════════════════════
-   HERO VIDEO (optional)
-   Add <video class="hero-video" ...> as the first child of .hero
+   HERO VIDEO
+   Background loop rendered in TouchDesigner (assets/hero-loop.*).
+   It is already graded to ink black, so it plays without filters.
    ════════════════════════ */
 
 .hero-video{
   position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;opacity:.18;z-index:0;pointer-events:none;
-  filter:grayscale(1) contrast(1.2);
+  object-fit:cover;object-position:70% 30%;
+  opacity:.8;z-index:0;pointer-events:none;
+}
+/* fade the bottom edge into the page so the loop never ends in a hard line */
+.hero::after{
+  background:
+    linear-gradient(to bottom,transparent 70%,#000 100%),
+    radial-gradient(ellipse 60% 50% at 30% 50%,rgba(200,200,215,.025) 0%,transparent 70%);
+  z-index:1;
 }
 
 /* ════════════════════════
@@ -635,7 +636,12 @@ footer p{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.15em;colo
   .about-grid{grid-template-columns:1fr;gap:3rem}
   body{cursor:auto}
   .cur,.cur-r,.cur-b{display:none}
-  .hero-bg{opacity:.5;right:-2rem}
+  /* phones: keep the tree in the upper half and fade it out before the text */
+  .hero-video{
+    inset:0 0 auto 0;height:58%;opacity:.6;object-position:72% 0%;
+    -webkit-mask-image:linear-gradient(to bottom,#000 45%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 45%,transparent 100%);
+  }
 }
 
 @media(prefers-reduced-motion:reduce){

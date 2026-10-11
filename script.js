@@ -89,12 +89,9 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeLb();
 });
 
-/* ── Hero background text parallax ── */
-document.addEventListener('mousemove', e => {
-  const x = (e.clientX / window.innerWidth  - 0.5) * 10;
-  const y = (e.clientY / window.innerHeight - 0.5) * 10;
-  const bg = document.querySelector('.hero-bg');
-  if (bg) {
-    bg.style.transform = `translateY(calc(-50% + ${y * 0.4}px)) translateX(${x * 0.4}px)`;
-  }
-});
+/* ── Hero background loop: hold on the still frame for reduced-motion users ── */
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  heroVideo.removeAttribute('autoplay');
+  heroVideo.pause();
+}
