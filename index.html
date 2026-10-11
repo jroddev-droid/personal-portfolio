@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pensive ronin — visual archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Share+Tech+Mono&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- RGB split cursor dots -->
+    <div class="cur" id="cur"></div>
+    <div class="cur-r" id="curR"></div>
+    <div class="cur-b" id="curB"></div>
+
+    <!-- Scroll progress bar -->
+    <div id="prog"></div>
+
+    <!-- ════════════════════════
+     NAVIGATION
+     ════════════════════════ -->
+    <nav>
+      <a class="nav-logo" href="#" data-text="pensive ronin">pensive ronin</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#work">work</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#process">process</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+
+      <div class="nav-tag">
+        <span class="nd"></span>
+        <span>sys_online</span>
+      </div>
+
+      <button class="ham" id="ham" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ════════════════════════
+     HERO
+     ════════════════════════ -->
+    <section class="hero">
+      <!-- large decorative background text -->
+      <div class="hero-bg">侍</div>
+
+      <div class="hero-content">
+        <div class="hero-err">SIGNAL_FRACTURED — RONIN DETECTED</div>
+
+        <h1 class="hero-title" data-text="pensive ronin">pensive ronin</h1>
+
+        <div class="hero-jp">ビジュアルアーカイブ / 崩壊</div>
+
+        <div class="hero-line"></div>
+
+        <p class="hero-desc">
+          photo &amp; video editing from the <em>corrupted signal</em>.<br />
+          breakcore aesthetics. digital decay. every frame a glitch in the
+          system.<br />
+          <em>// output is never clean. that's the point.</em>
+        </p>
+
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-r">enter_archive</a>
+          <a href="#contact" class="btn">contact.exe</a>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        <span class="scroll-label">scroll</span>
+      </div>
+    </section>
+
+    <!-- ════════════════════════
+     CORRUPTION MARQUEE
+     ════════════════════════ -->
+    <div class="corrupt-strip">
+      <div class="corrupt-inner">
+        <span>visual archive</span> <span class="hi">▋▋▋</span>
+        <span>photo / video</span> <span class="hi">ERROR</span>
+        <span>digital decay</span> <span class="hi">∅∅∅</span>
+        <span>breakcore aesthetics</span> <span class="hi">▋▋▋</span>
+        <span>崩壊</span> <span class="hi">CORRUPT</span>
+        <span>signal lost</span> <span class="hi">░░░</span>
+        <!-- duplicated for seamless loop -->
+        <span>visual archive</span> <span class="hi">▋▋▋</span>
+        <span>photo / video</span> <span class="hi">ERROR</span>
+        <span>digital decay</span> <span class="hi">∅∅∅</span>
+        <span>breakcore aesthetics</span> <span class="hi">▋▋▋</span>
+        <span>崩壊</span> <span class="hi">CORRUPT</span>
+        <span>signal lost</span> <span class="hi">░░░</span>
+      </div>
+    </div>
+
+    <!-- ════════════════════════
+     STATS
+     ════════════════════════ -->
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-num r">120+</div>
+          <div class="stat-label">files_exported</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">4K</div>
+          <div class="stat-label">max_res</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num r">V</div>
+          <div class="stat-label">years_active</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">∅</div>
+          <div class="stat-label">limits_found</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════
+     WORK / PORTFOLIO
+     ════════════════════════ -->
+    <section id="work">
+      <div class="container">
+        <div class="reveal">
+          <div class="sec-tag">01 selected_works</div>
+          <h2 class="sec-title">The Archive</h2>
+          <p class="sec-sub">corrupted signal. clean intent. click to open.</p>
+        </div>
+
+        <div class="port-grid reveal">
+          <!-- ── Featured (spans full width) ── -->
+          <div
+            class="port-item feat ta"
+            data-name="NEON DYSTOPIA"
+            data-tag="Photo Series"
+            data-type="photo"
+            onclick="openLb(this)"
+          >
+            <svg class="tsv" viewBox="0 0 1000 380" preserveAspectRatio="xMidYMid slice">
+              <line x1="0" y1="190" x2="1000" y2="190" stroke="#c0c0c0" stroke-width=".5" />
+              <line x1="500" y1="0" x2="500" y2="380" stroke="#888" stroke-width=".5" />
+              <rect x="300" y="90" width="400" height="200" fill="none" stroke="#c0c0c0" stroke-width=".5" />
+              <circle cx="500" cy="190" r="100" fill="none" stroke="#888" stroke-width=".4" />
+              <line x1="0" y1="80" x2="1000" y2="80" stroke="#c0c0c0" stroke-width=".2" />
+              <line x1="0" y1="300" x2="1000" y2="300" stroke="#c0c0c0" stroke-width=".2" />
+            </svg>
+            <div class="port-badge p">photo</div>
+            <div class="port-overlay">
+              <div class="port-tag">featured — photo series</div>
+              <div class="port-name">NEON DYSTOPIA</div>
+            </div>
+          </div>
+
+          <div class="port-item tb" data-name="CHROME PULSE" data-tag="Video Edit" data-type="video" onclick="openLb(this)">
+            <svg class="tsv" viewBox="0 0 400 250">
+              <polyline points="0,125 60,80 130,155 200,40 270,110 340,70 400,95" fill="none" stroke="#c0c0c0" stroke-width="1" />
+              <polyline points="0,180 60,140 130,168 200,90 270,148 340,115 400,135" fill="none" stroke="#888" stroke-width=".5" />
+              <line x1="0" y1="30" x2="400" y2="30" stroke="#c0c0c0" stroke-width=".2" />
+            </svg>
+            <div class="port-badge v">video</div>
+            <div class="port-overlay">
+              <div class="port-tag">video edit</div>
+              <div class="port-name">CHROME PULSE</div>
+            </div>
+          </div>
+
+          <div class="port-item tc" data-name="DEAD SIGNAL" data-tag="Photo Edit" data-type="photo" onclick="openLb(this)">
+            <svg class="tsv" viewBox="0 0 400 250">
+              <circle cx="200" cy="125" r="75" fill="none" stroke="#c0c0c0" stroke-width="1" />
+              <circle cx="200" cy="125" r="105" fill="none" stroke="#888" stroke-width=".4" />
+              <line x1="200" y1="0" x2="200" y2="250" stroke="#c0c0c0" stroke-width=".3" />
+              <line x1="0" y1="125" x2="400" y2="125" stroke="#888" stroke-width=".3" />
+              <line x1="50" y1="20" x2="350" y2="230" stroke="#c0c0c0" stroke-width=".2" />
+            </svg>
+            <div class="port-badge p">photo</div>
+            <div class="port-overlay">
+              <div class="port-tag">photo edit</div>
+              <div class="port-name">DEAD SIGNAL</div>
+            </div>
+          </div>
+
+          <div class="port-item td" data-name="SYSTEM BREACH" data-tag="Video Edit" data-type="video" onclick="openLb(this)">
+            <svg class="tsv" viewBox="0 0 400 250">
+              <rect x="50" y="40" width="300" height="170" fill="none" stroke="#888" stroke-width=".7" />
+              <rect x="70" y="58" width="260" height="134" fill="none" stroke="#c0c0c0" stroke-width=".3" />
+              <line x1="50" y1="125" x2="350" y2="125" stroke="#888" stroke-width=".3" />
+              <polyline points="80,180 120,100 160,160 200,80 240,140 280,90 320,150" fill="none" stroke="#c0c0c0" stroke-width=".6" />
+            </svg>
+            <div class="port-badge v">video</div>
+            <div class="port-overlay">
+              <div class="port-tag">video edit</div>
+              <div class="port-name">SYSTEM BREACH</div>
+            </div>
+          </div>
+
+          <div class="port-item te" data-name="CORRUPT.JPG" data-tag="Photo Manip" data-type="photo" onclick="openLb(this)">
+            <svg class="tsv" viewBox="0 0 400 250">
+              <line x1="0" y1="40" x2="400" y2="40" stroke="#c0c0c0" stroke-width="1" />
+              <line x1="0" y1="42" x2="400" y2="42" stroke="#888" stroke-width=".5" />
+              <line x1="0" y1="150" x2="400" y2="150" stroke="#c0c0c0" stroke-width="1" />
+              <line x1="0" y1="152" x2="400" y2="152" stroke="#888" stroke-width=".5" />
+              <rect x="130" y="70" width="140" height="100" fill="none" stroke="#c0c0c0" stroke-width=".6" />
+              <line x1="130" y1="70" x2="270" y2="170" stroke="#888" stroke-width=".4" />
+              <line x1="270" y1="70" x2="130" y2="170" stroke="#888" stroke-width=".4" />
+            </svg>
+            <div class="port-badge p">photo</div>
+            <div class="port-overlay">
+              <div class="port-tag">photo manip</div>
+              <div class="port-name">CORRUPT.JPG</div>
+            </div>
+          </div>
+
+          <div class="port-item tf" data-name="VOID_OUTPUT" data-tag="Color Grade" data-type="video" onclick="openLb(this)">
+            <svg class="tsv" viewBox="0 0 400 250">
+              <polygon points="200,20 370,230 30,230" fill="none" stroke="#c0c0c0" stroke-width="1" />
+              <polygon points="200,70 330,230 70,230" fill="none" stroke="#888" stroke-width=".4" />
+              <circle cx="200" cy="175" r="28" fill="none" stroke="#c0c0c0" stroke-width=".6" />
+            </svg>
+            <div class="port-badge v">video</div>
+            <div class="port-overlay">
+              <div class="port-tag">color grade</div>
+              <div class="port-name">VOID_OUTPUT</div>
+            </div>
+          </div>
+        </div>
+        <!-- /port-grid -->
+      </div>
+      <!-- /container -->
+    </section>
+
+    <!-- divider -->
+    <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(192,192,192,0.2),transparent);position:relative;z-index:1;"></div>
+
+    <!-- ════════════════════════
+     ABOUT
+     ════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-frame reveal-l">
+            <div class="frame-stripe" style="top:30%"></div>
+            <div class="frame-stripe" style="top:65%"></div>
+            <div class="frame-placeholder">
+              <div class="fp-icon">侍</div>
+              <div class="fp-label">// insert portrait</div>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <div class="sec-tag">02 who_is_this</div>
+            <h2 class="sec-title">About.txt</h2>
+            <p>
+              visual editor. <em>corrupted by design</em>.<br />
+              i work in the space where breakcore and cinema intersect — heavy
+              color grading, photo manipulation, and motion work that refuses to
+              be clean.
+            </p>
+            <p>
+              every project is a <em>signal through static</em>. whether a
+              single still or a long-form video, the process is always the same:
+              push until it breaks, then keep going.
+            </p>
+            <p style="color:rgba(192,192,192,0.25);font-size:.65rem;letter-spacing:.15em;">
+              // error: biography incomplete. data corrupted.
+            </p>
+            <div class="skills">
+              <span class="skill">lightroom</span>
+              <span class="skill">premiere</span>
+              <span class="skill">after effects</span>
+              <span class="skill">photoshop</span>
+              <span class="skill">davinci</span>
+              <span class="skill">color grade</span>
+              <span class="skill">motion</span>
+              <span class="skill">composite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════
+     PROCESS
+     ════════════════════════ -->
+    <section id="process" class="proc-section">
+      <div class="container">
+        <div class="reveal">
+          <div class="sec-tag">03 workflow.exe</div>
+          <h2 class="sec-title">The Process</h2>
+          <p class="sec-sub">how the signal goes from raw noise to output.</p>
+        </div>
+
+        <div>
+          <div class="proc-item reveal">
+            <div class="proc-n">01</div>
+            <div>
+              <div class="proc-t">vision_init()</div>
+              <div class="proc-d">every visual starts with intent. extract the mood, define a language, commit to a direction before any software opens.</div>
+            </div>
+          </div>
+          <div class="proc-item reveal">
+            <div class="proc-n">02</div>
+            <div>
+              <div class="proc-t">raw_edit()</div>
+              <div class="proc-d">build the skeleton. cuts, crops, timing, composition. bones before flesh. structure before style.</div>
+            </div>
+          </div>
+          <div class="proc-item reveal">
+            <div class="proc-n">03</div>
+            <div>
+              <div class="proc-t">color.corrupt()</div>
+              <div class="proc-d">this is where the world is made. crush the blacks. push the silvers. build atmosphere through color science until the image bleeds the right frequency.</div>
+            </div>
+          </div>
+          <div class="proc-item reveal">
+            <div class="proc-n">04</div>
+            <div>
+              <div class="proc-t">glitch_pass()</div>
+              <div class="proc-d">add the human error: grain, aberration, scan lines, distortion. the layer that makes it feel like it came from somewhere broken and real.</div>
+            </div>
+          </div>
+          <div class="proc-item reveal">
+            <div class="proc-n">05</div>
+            <div>
+              <div class="proc-t">export_final()</div>
+              <div class="proc-d">right codec. right resolution. right delivery. always on time. the file reaches you clean — the corruption was always intentional.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════
+     CONTACT
+     ════════════════════════ -->
+    <section id="contact" class="contact-sec">
+      <div class="container">
+        <div class="reveal">
+          <div class="sec-tag" style="justify-content:center;margin-bottom:1rem">04 contact.exe</div>
+          <div class="contact-jp">コンタクト / 崩壊</div>
+          <h2 class="sec-title" style="margin-bottom:1.5rem">Let's Build<br />Something Broken</h2>
+          <a class="contact-email" href="mailto:hello@pensiveronin.io">hello@pensiveronin.io</a>
+          <p class="contact-sub">commissions — collabs — corruptions</p>
+          <ul class="social">
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">behance</a></li>
+            <li><a href="#">youtube</a></li>
+            <li><a href="#">twitter/x</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════
+     FOOTER
+     ════════════════════════ -->
+    <footer>
+      <p>© 2026 pensive ronin — all rights reserved</p>
+      <p class="foot-err">ERR_SYS — v2.6.0_corrupt</p>
+      <p>ビジュアルアーカイブ</p>
+    </footer>
+
+    <!-- ════════════════════════
+     LIGHTBOX
+     ════════════════════════ -->
+    <div class="lb" id="lb" onclick="closeLbOut(event)">
+      <div class="lb-inner">
+        <button class="lb-close" onclick="closeLb()">[ esc — close ]</button>
+        <div class="lb-media">
+          <div class="lb-ph">
+            <span class="big">侍</span>
+            <p id="lbType">// drop your media here</p>
+          </div>
+        </div>
+        <div class="lb-cap">
+          <div class="lb-title" id="lbTitle">—</div>
+          <div class="lb-tag" id="lbTag">—</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
