@@ -129,16 +129,29 @@ nav{
   font-family:var(--font-goth);font-size:1.75rem;
   text-decoration:none;letter-spacing:.01em;line-height:1.1;
   position:relative;
-  filter:drop-shadow(0 0 8px rgba(255,255,255,.12));
+  /* same holographic treatment as the hero title, scaled for small text:
+     a slightly stronger fill and a tighter glow keep it legible */
+  background:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.14) 0 1px,transparent 1px 3px),
+    linear-gradient(180deg,rgba(255,255,255,.30) 0%,rgba(190,205,235,.12) 55%,rgba(255,255,255,.24) 100%);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+  -webkit-text-stroke:.8px #fff;
+  filter:
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 3px rgba(255,255,255,.85))
+    drop-shadow(0 0 9px rgba(225,232,255,.4));
+  animation:holoFlicker 7s 3s infinite;
 }
 .nav-logo::before,.nav-logo::after{
   content:attr(data-text);
   position:absolute;top:0;left:0;
   font-family:var(--font-goth);font-size:inherit;letter-spacing:inherit;line-height:inherit;
   -webkit-background-clip:border-box;background:none;
+  color:transparent;
 }
-.nav-logo::before{color:var(--silver-hi);clip-path:polygon(0 30%,100% 30%,100% 50%,0 50%);animation:glitchA 4s infinite}
-.nav-logo::after{color:var(--steel);clip-path:polygon(0 55%,100% 55%,100% 72%,0 72%);animation:glitchB 4s infinite}
+.nav-logo::before{-webkit-text-stroke:.8px rgba(255,255,255,.75);clip-path:polygon(0 30%,100% 30%,100% 50%,0 50%);animation:glitchA 4s infinite}
+.nav-logo::after{-webkit-text-stroke:.8px rgba(150,170,215,.8);clip-path:polygon(0 55%,100% 55%,100% 72%,0 72%);animation:glitchB 4s infinite}
 
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{
