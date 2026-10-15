@@ -168,6 +168,48 @@ nav{
 }
 .nd{width:4px;height:4px;background:var(--silver);box-shadow:0 0 6px var(--silver-hi);animation:blink 1.5s infinite}
 
+/* ── holographic nav (desktop): glowing LED-style bottom line and glowing links ── */
+@media(min-width:641px){
+  nav{border-bottom-color:transparent}
+  nav::after{
+    content:'';position:absolute;left:0;right:0;bottom:-1px;height:1px;
+    background:rgba(255,255,255,.9);
+    box-shadow:
+      0 0 2px #fff,
+      0 0 8px rgba(255,255,255,.6),
+      0 0 22px rgba(200,215,255,.3);
+    pointer-events:none;
+    animation:holoFlicker 7s 4s infinite;
+  }
+  .nav-links a{
+    position:relative;
+    color:rgba(255,255,255,.82);
+    text-shadow:
+      0 0 1px #fff,
+      0 0 6px rgba(255,255,255,.55),
+      0 0 14px rgba(200,215,255,.3);
+    transition:color .15s,text-shadow .15s;
+  }
+  .nav-links a::after{
+    content:'';position:absolute;left:0;right:.2em;bottom:-6px;height:1px;
+    background:#fff;
+    box-shadow:0 0 3px #fff,0 0 10px rgba(255,255,255,.7);
+    transform:scaleX(0);transform-origin:left;
+    transition:transform .25s cubic-bezier(.4,0,.2,1);
+  }
+  .nav-links a:hover,.nav-links a:focus-visible{
+    color:#fff;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 4px #fff,
+      0 0 12px rgba(255,255,255,.85),
+      0 0 26px rgba(200,215,255,.5);
+    outline:none;
+  }
+  .nav-links a:hover::after,.nav-links a:focus-visible::after{transform:scaleX(1)}
+  .nav-tag{color:rgba(255,255,255,.55);text-shadow:0 0 6px rgba(255,255,255,.35)}
+}
+
 .ham{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:2px}
 .ham span{display:block;width:20px;height:1px;background:var(--silver)}
 
