@@ -665,14 +665,22 @@ footer p{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.15em;colo
 .lb-ph p{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em}
 
 /* ════════════════════════
-   HERO VIDEO (optional)
-   Add <video class="hero-video" ...> as the first child of .hero
+   HERO VIDEO
+   assets/cynthwave-bg.* is pre-graded dark, muted and softly blurred.
+   Raise or lower the opacity below to make it brighter or dimmer.
    ════════════════════════ */
 
 .hero-video{
   position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;opacity:.18;z-index:0;pointer-events:none;
-  filter:grayscale(1) contrast(1.2);
+  object-fit:cover;opacity:.26;z-index:0;pointer-events:none;
+  filter:saturate(.8);
+}
+/* sink the footage at the edges and bottom so it reads as a distant, cinematic backdrop */
+.hero::after{
+  background:
+    linear-gradient(to bottom,rgba(0,0,0,.55) 0%,transparent 22%,transparent 62%,#000 100%),
+    radial-gradient(ellipse 75% 70% at 35% 45%,transparent 40%,rgba(0,0,0,.7) 100%);
+  z-index:1;
 }
 
 /* ════════════════════════
@@ -680,6 +688,7 @@ footer p{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.15em;colo
    ════════════════════════ */
 
 @media(max-width:640px){
+  .hero-video{opacity:.2}
   .hero-title{
     --holo-line:1px;
     filter:

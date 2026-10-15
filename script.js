@@ -98,3 +98,10 @@ document.addEventListener('mousemove', e => {
     bg.style.transform = `translateY(calc(-50% + ${y * 0.4}px)) translateX(${x * 0.4}px)`;
   }
 });
+
+/* ── Hero background loop: hold on the still frame for reduced-motion users ── */
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  heroVideo.removeAttribute('autoplay');
+  heroVideo.pause();
+}
