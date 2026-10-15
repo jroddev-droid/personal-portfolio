@@ -168,19 +168,8 @@ nav{
 }
 .nd{width:4px;height:4px;background:var(--silver);box-shadow:0 0 6px var(--silver-hi);animation:blink 1.5s infinite}
 
-/* ── holographic nav (desktop): glowing LED-style bottom line and glowing links ── */
+/* ── holographic nav links (desktop): glowing text, glowing underline on hover ── */
 @media(min-width:641px){
-  nav{border-bottom-color:transparent}
-  nav::after{
-    content:'';position:absolute;left:0;right:0;bottom:-1px;height:1px;
-    background:rgba(255,255,255,.9);
-    box-shadow:
-      0 0 2px #fff,
-      0 0 8px rgba(255,255,255,.6),
-      0 0 22px rgba(200,215,255,.3);
-    pointer-events:none;
-    animation:holoFlicker 7s 4s infinite;
-  }
   .nav-links a{
     position:relative;
     color:rgba(255,255,255,.82);
