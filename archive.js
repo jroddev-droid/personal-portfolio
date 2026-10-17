@@ -18,32 +18,20 @@
       Image:  { src: 'assets/archive/full/name.jpg', thumb: 'assets/archive/thumbs/name.jpg', title: 'name', tag: 'photo edit' },
       Video:  { video: 'assets/archive/video/name.mp4', thumb: 'assets/archive/thumbs/name.jpg', title: 'name', tag: 'video edit' },
 
-   The entries below are stand-ins made from your own animations.
-   Swap them for your edits whenever you're ready.
+   Titles and tags are shown on hover and in the viewer — rename them freely.
    ═══════════════════════════════════════════ */
 
 const ARCHIVE = [
-  { src: 'assets/archive/full/tokyo-night-01.jpg',     thumb: 'assets/archive/thumbs/tokyo-night-01.jpg',     title: 'tokyo night 01',  tag: 'video still' },
-  { src: 'assets/archive/full/cashforgold-01.jpg',     thumb: 'assets/archive/thumbs/cashforgold-01.jpg',     title: 'ca$hforgold',     tag: 'cover effect' },
-  { src: 'assets/archive/full/cynthwave-01.jpg',       thumb: 'assets/archive/thumbs/cynthwave-01.jpg',       title: 'cynthwave 01',    tag: 'video still' },
-  { video: 'assets/archive/video/dftwavy-loop.mp4',    thumb: 'assets/archive/thumbs/dftwavy-loop.jpg',       title: 'dftwavy',         tag: 'video loop' },
-  { src: 'assets/archive/full/power-gradient-01.jpg',  thumb: 'assets/archive/thumbs/power-gradient-01.jpg',  title: 'power gradient 01', tag: 'colour study' },
-  { src: 'assets/archive/full/baby-track-01.jpg',      thumb: 'assets/archive/thumbs/baby-track-01.jpg',      title: 'baby track 01',   tag: 'video still' },
-  { src: 'assets/archive/full/tokyo-night-02.jpg',     thumb: 'assets/archive/thumbs/tokyo-night-02.jpg',     title: 'tokyo night 02',  tag: 'video still' },
-  { video: 'assets/archive/video/cashforgold-led-loop.mp4', thumb: 'assets/archive/thumbs/cashforgold-led-loop.jpg', title: 'ca$hforgold led panel', tag: 'video loop' },
-  { src: 'assets/archive/full/dftwavy-01.jpg',         thumb: 'assets/archive/thumbs/dftwavy-01.jpg',         title: 'dftwavy grid',    tag: 'video still' },
-  { src: 'assets/archive/full/power-gradient-02.jpg',  thumb: 'assets/archive/thumbs/power-gradient-02.jpg',  title: 'power gradient 02', tag: 'colour study' },
-  { src: 'assets/archive/full/cynthwave-02.jpg',       thumb: 'assets/archive/thumbs/cynthwave-02.jpg',       title: 'cynthwave 02',    tag: 'video still' },
-  { src: 'assets/archive/full/cashforgold-03.jpg',     thumb: 'assets/archive/thumbs/cashforgold-03.jpg',     title: 'ca$hforgold trippy', tag: 'cover effect' },
-  { src: 'assets/archive/full/baby-track-02.jpg',      thumb: 'assets/archive/thumbs/baby-track-02.jpg',      title: 'baby track 02',   tag: 'video still' },
-  { src: 'assets/archive/full/power-gradient-03.jpg',  thumb: 'assets/archive/thumbs/power-gradient-03.jpg',  title: 'power gradient 03', tag: 'colour study' },
-  { src: 'assets/archive/full/tokyo-night-03.jpg',     thumb: 'assets/archive/thumbs/tokyo-night-03.jpg',     title: 'tokyo night 03',  tag: 'video still' },
-  { video: 'assets/archive/video/power-gradient-loop.mp4', thumb: 'assets/archive/thumbs/power-gradient-loop.jpg', title: 'power gradient loop', tag: 'video loop' },
-  { src: 'assets/archive/full/cashforgold-02.jpg',     thumb: 'assets/archive/thumbs/cashforgold-02.jpg',     title: 'ca$hforgold led', tag: 'cover effect' },
-  { src: 'assets/archive/full/cynthwave-03.jpg',       thumb: 'assets/archive/thumbs/cynthwave-03.jpg',       title: 'cynthwave 03',    tag: 'video still' },
-  { src: 'assets/archive/full/dftwavy-02.jpg',         thumb: 'assets/archive/thumbs/dftwavy-02.jpg',         title: 'dftwavy stage',   tag: 'video still' },
-  { src: 'assets/archive/full/baby-track-03.jpg',      thumb: 'assets/archive/thumbs/baby-track-03.jpg',      title: 'baby track 03',   tag: 'video still' },
-  { src: 'assets/archive/full/power-gradient-04.jpg',  thumb: 'assets/archive/thumbs/power-gradient-04.jpg',  title: 'power gradient 04', tag: 'colour study' },
+  { src: 'assets/archive/full/kabukicho.jpg',         thumb: 'assets/archive/thumbs/kabukicho.jpg',         title: 'kabukicho',          tag: 'photo edit' },
+  { src: 'assets/archive/full/cathedral-tracked.jpg', thumb: 'assets/archive/thumbs/cathedral-tracked.jpg', title: 'cathedral, tracked', tag: 'photo edit' },
+  { video: 'assets/archive/video/night-tram.mp4',     thumb: 'assets/archive/thumbs/night-tram.jpg',        title: 'night tram',         tag: 'video edit' },
+  { src: 'assets/archive/full/glove.jpg',             thumb: 'assets/archive/thumbs/glove.jpg',             title: 'glove',              tag: 'photo edit' },
+  { src: 'assets/archive/full/yodobashi.jpg',         thumb: 'assets/archive/thumbs/yodobashi.jpg',         title: 'yodobashi',          tag: 'photo edit' },
+  { video: 'assets/archive/video/indiana-backrooms.mp4', thumb: 'assets/archive/thumbs/indiana-backrooms.jpg', title: 'indiana backrooms', tag: 'video edit' },
+  { src: 'assets/archive/full/church-steps.jpg',      thumb: 'assets/archive/thumbs/church-steps.jpg',      title: 'church steps',       tag: 'photo edit' },
+  { video: 'assets/archive/video/cashforgold.mp4',    thumb: 'assets/archive/thumbs/cashforgold.jpg',       title: 'ca$hforgold',        tag: 'video edit' },
+  { src: 'assets/archive/full/red-room.jpg',          thumb: 'assets/archive/thumbs/red-room.jpg',          title: 'red room',           tag: 'photo edit' },
+  { src: 'assets/archive/full/public-baths.jpg',      thumb: 'assets/archive/thumbs/public-baths.jpg',      title: 'public baths',       tag: 'photo edit' },
 ];
 
 /* ═══════════════════════════════════════════
@@ -84,18 +72,37 @@ const ARCHIVE = [
   function build() {
     W = root.clientWidth; H = root.clientHeight;
     const mobile = W < 700;
-    const cols = mobile ? 3 : (W > 1100 ? 6 : 5);
-    const cw = mobile ? Math.max(120, W / 2.7) : Math.min(300, Math.max(200, W / 5.4));
+    // columns follow the window's shape and how many pieces there are,
+    // so a small archive stays full and a big one spreads out
+    const n = items.length, fewItems = n < 14;
+    let cols = mobile ? 3 : Math.max(3, Math.min(6, Math.round(Math.sqrt(n * 1.06 * (W / H)))));
+    if (!mobile && fewItems) {
+      // small archive: nudge the column count so the grid fills with as few empty cells as possible
+      const waste = c => c * Math.ceil(n / c) - n;
+      [cols - 1, cols + 1].forEach(c => { if (c >= 3 && c <= 6 && waste(c) < waste(cols)) cols = c; });
+    }
+    const cw = mobile ? Math.max(120, W / 2.7)
+             : fewItems ? Math.min(360, Math.max(220, W / (cols + 0.3)))    // small archive: one tile ≈ the window, so repeats stay apart
+             : Math.min(300, Math.max(200, W / 5.4));
     const ch = cw * 1.18;
-    const cells = cols * Math.ceil(items.length * 1.06 / cols);         // a few empty cells = breathing room
+    const cells = cols * Math.ceil((fewItems ? n : n * 1.06) / cols);  // big archives keep a few empty cells for breathing room
     const rows = cells / cols;
     const tileW = cols * cw, tileH = rows * ch;
 
-    // deterministic shuffle of cells so neighbours change across the tile
-    const order = [...Array(cells).keys()].sort((a, b) => hash(a + 41) - hash(b + 41));
+    // spread the empty cells out (one per row where possible) so no big holes form,
+    // then shuffle which piece lands in which remaining cell
+    const empties = cells - items.length, skip = new Set();
+    for (let e = 0; e < empties; e++) {
+      const r = Math.floor(e * rows / empties);
+      let c = Math.floor(hash(e + 5) * cols);
+      while (skip.has(r * cols + c)) c = (c + 1) % cols;
+      skip.add(r * cols + c);
+    }
+    const order = [...Array(cells).keys()].filter(c => !skip.has(c)).sort((a, b) => hash(a + 41) - hash(b + 41));
+    const small = fewItems;                                            // fewer pieces, bigger frames
     items.forEach((it, k) => {
       const cell = order[k], c = cell % cols, r = Math.floor(cell / cols);
-      let w = cw * (0.62 + hash(k) * 0.28);
+      let w = cw * ((small ? 0.72 : 0.62) + hash(k) * (small ? 0.24 : 0.28));
       let h = w / it.ratio;
       if (h > ch * 0.84) { h = ch * 0.84; w = h * it.ratio; }
       it.w = w; it.h = h;
@@ -135,7 +142,7 @@ const ARCHIVE = [
       v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
       b.appendChild(v); b._video = v;
       const badge = document.createElement('span');
-      badge.className = 'arc-badge'; badge.textContent = 'loop';
+      badge.className = 'arc-badge'; badge.textContent = 'video';
       b.appendChild(badge);
     } else {
       const im = document.createElement('img');

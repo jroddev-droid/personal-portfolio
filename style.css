@@ -473,7 +473,7 @@ section{position:relative;z-index:1;padding:6rem 2rem}
 .archive.is-booted .arc-item{opacity:1;transition:opacity 1s ease var(--d,0s)}
 .arc-item img,.arc-item video{
   display:block;width:100%;height:100%;object-fit:cover;pointer-events:none;
-  filter:grayscale(.7) brightness(.62) contrast(1.1);     /* resting: dim steel */
+  filter:grayscale(.45) brightness(.82) contrast(1.05);   /* resting: muted steel */
   transition:filter .35s ease;
 }
 .arc-item::after{
@@ -481,7 +481,7 @@ section{position:relative;z-index:1;padding:6rem 2rem}
   box-shadow:0 0 0 1px rgba(255,255,255,.07);transition:box-shadow .3s ease;
 }
 /* one frame wakes up, the rest sink back */
-.archive.is-hovering .arc-item img,.archive.is-hovering .arc-item video{filter:grayscale(1) brightness(.28) contrast(1.1)}
+.archive.is-hovering .arc-item img,.archive.is-hovering .arc-item video{filter:grayscale(.9) brightness(.42) contrast(1.05)}
 .archive .arc-item:hover img,.archive .arc-item:hover video,
 .archive .arc-item:focus-visible img,.archive .arc-item:focus-visible video{filter:none}
 .arc-item:hover::after,.arc-item:focus-visible::after{
@@ -534,7 +534,7 @@ body.cur-label .cur-r,body.cur-label .cur-b{opacity:0}
 
 @media(hover:none){
   /* no hover on touch screens, so frames rest a little brighter */
-  .arc-item img,.arc-item video{filter:grayscale(.45) brightness(.75) contrast(1.08)}
+  .arc-item img,.arc-item video{filter:grayscale(.2) brightness(.92)}
 }
 
 /* ════════════════════════
