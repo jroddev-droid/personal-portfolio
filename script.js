@@ -66,28 +66,7 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   });
 });
 
-/* ── Lightbox ── */
-function openLb(el) {
-  document.getElementById('lbTitle').textContent = el.dataset.name;
-  document.getElementById('lbTag').textContent   = el.dataset.tag;
-  document.getElementById('lbType').textContent  =
-    el.dataset.type === 'video' ? '// drop video here' : '// drop photo here';
-  document.getElementById('lb').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeLb() {
-  document.getElementById('lb').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function closeLbOut(e) {
-  if (e.target.id === 'lb') closeLb();
-}
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeLb();
-});
+/* ── The Archive canvas and its viewer live in archive.js ── */
 
 /* ── Hero background text parallax ── */
 document.addEventListener('mousemove', e => {
