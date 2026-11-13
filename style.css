@@ -433,6 +433,44 @@ section{position:relative;z-index:1;padding:6rem 2rem}
   filter:drop-shadow(0 0 14px rgba(220,220,235,.12));
   animation:corrupt 7s infinite;
 }
+/* section heading with the same hologram treatment as the site title:
+   glowing white outline over a see-through scanlined fill */
+.sec-title.holo-title{
+  position:relative;
+  --holo-line:1.4px;
+  background:
+    linear-gradient(105deg,transparent 40%,rgba(255,255,255,.32) 50%,transparent 60%),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.10) 0 1px,transparent 1px 3px),
+    linear-gradient(180deg,rgba(255,255,255,.16) 0%,rgba(190,205,235,.05) 55%,rgba(255,255,255,.12) 100%);
+  background-size:50% 100%,100% 100%,100% 100%;
+  background-repeat:no-repeat,repeat,no-repeat;
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+  -webkit-text-stroke:var(--holo-line) #fff;
+  filter:
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 3px rgba(255,255,255,.9))
+    drop-shadow(0 0 9px rgba(235,240,255,.6))
+    drop-shadow(0 0 22px rgba(200,215,255,.3));
+  animation:corrupt 7s infinite, holoShine 6s 1.5s ease-in-out infinite, holoFlicker 7s 2.5s infinite;
+}
+.sec-title.holo-title::before,.sec-title.holo-title::after{
+  content:attr(data-text);
+  position:absolute;top:0;left:0;
+  font-family:inherit;font-size:inherit;line-height:inherit;letter-spacing:inherit;
+  background:none;-webkit-background-clip:border-box;
+  color:transparent;pointer-events:none;
+}
+.sec-title.holo-title::before{
+  -webkit-text-stroke:var(--holo-line) rgba(255,255,255,.75);
+  clip-path:polygon(0 22%,100% 22%,100% 42%,0 42%);
+  animation:glitchA 5s 1.5s infinite;
+}
+.sec-title.holo-title::after{
+  -webkit-text-stroke:var(--holo-line) rgba(150,170,215,.8);
+  clip-path:polygon(0 58%,100% 58%,100% 76%,0 76%);
+  animation:glitchB 5s 1.5s infinite;
+}
 .sec-sub{
   font-family:var(--font-mono);font-size:.7rem;
   color:rgba(255,255,255,.3);margin-bottom:3rem;
@@ -737,6 +775,13 @@ footer p{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.15em;colo
    ════════════════════════ */
 
 @media(max-width:640px){
+  .sec-title.holo-title{
+    --holo-line:1px;
+    filter:
+      drop-shadow(0 0 1px #fff)
+      drop-shadow(0 0 2px rgba(255,255,255,.85))
+      drop-shadow(0 0 6px rgba(225,232,255,.4));
+  }
   .archive-head{padding:0 1.25rem}
   .archive{height:82vh;min-height:520px}
   .archive-hud{left:1.25rem;right:1.25rem}
