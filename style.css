@@ -456,7 +456,8 @@ section{position:relative;z-index:1;padding:6rem 2rem}
 }
 .sec-title.holo-title::before,.sec-title.holo-title::after{
   content:attr(data-text);
-  position:absolute;top:0;left:0;
+  position:absolute;top:0;left:0;right:0;
+  text-align:inherit;white-space:pre-line;          /* keeps two-line headings lined up */
   font-family:inherit;font-size:inherit;line-height:inherit;letter-spacing:inherit;
   background:none;-webkit-background-clip:border-box;
   color:transparent;pointer-events:none;
